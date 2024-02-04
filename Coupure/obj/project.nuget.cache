@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+aOziBwBeLskP9GIF3qy8FxMCTDiMFQk2DcnZ5zVSwMIZEM33lRJcOZ33ELTrZ4SgwCam9acNSHIT5Vm5b1ppw==",
+  "success": true,
+  "projectFilePath": "D:\\ITU\\S5\\prog\\Coupure\\Coupure\\Coupure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tahir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\tahir\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\tahir\\.nuget\\packages\\npgsql\\8.0.1\\npgsql.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

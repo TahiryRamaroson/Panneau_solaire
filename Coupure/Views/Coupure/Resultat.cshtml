@@ -1,0 +1,31 @@
+﻿<div class="card bg-dark text-white">
+    <div class="card-body">
+        <h5 class="card-title">Prévision du @ViewBag.Prediction.datePrediction</h5>
+        <p class="card-text"><b>Etudiants présent le matin:</b> @ViewBag.Prediction.nbMatinMoyenne</p>
+        <p class="card-text"><b>Etudiants présent l'après-midi:</b> @ViewBag.Prediction.nbApMoyenne</p>
+        <p class="card-text"><b>Coupure à:</b> @ViewBag.Prediction.heureCoupure</p>
+        <p class="card-text"><b>Consommation moyenne par Etudiant:</b> @ViewBag.Prediction.consoMoyenne Wh</p>
+        <p class="card-text"><b>Consommation le matin:</b> @ViewBag.Prediction.puissanceMatin Wh</p>
+        <p class="card-text"><b>Consommation l'après-midi:</b> @ViewBag.Prediction.puissanceAp Wh</p>
+    </div>
+</div>
+<br /><br />
+<table class="table table-borderless table-hover">
+    <thead class="bg-dark" style="background-color:black; color:white;">
+        <tr>
+            <th scope="col">Heure</th>
+            <th scope="col">Puissance des panneaux</th>
+            <th scope="col">Capacité du batterie</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in @ViewBag.Prediction.detailsPredictions)
+        {
+            <tr>
+                <td>@item.heure</td>
+                <td>@item.puissancePanneau</td>
+                <td>@item.capaciteBatterie</td>
+            </tr>
+        }
+    </tbody>
+</table>

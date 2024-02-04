@@ -1,0 +1,28 @@
+﻿<div class="container">
+    <div class="text-center">
+        <h1>Faire une prévision</h1>
+        <form method="get" asp-controller="Coupure" asp-action="Resultat">
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Source</label>
+                    <select class="custom-select mr-sm-2 form-group" id="inlineFormCustomSelect" name="idSource">
+                        @foreach(var item in ViewBag.Sources)
+                        {
+                            <option value="@item.idSource">Source @item.idSource</option>
+                        }
+                       
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Date de prediction</label>
+                        <input type="date" class="form-control" id="formGroupExampleInput" name="datePrediction">
+                    </div>
+                </div>
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Valider</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
